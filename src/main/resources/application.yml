@@ -1,0 +1,13 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: Kafka-Consumer
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/Customer
+kafka:
+  bootstrapAddress: localhost:9092
+  groupId: customer
+  topic: customer_details
